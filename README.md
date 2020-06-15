@@ -1,5 +1,6 @@
 # news-search-frontend
 ## Front-end приложения поисковика новостей
+### ссылка на демо https://timingtea.github.io/news-search-frontend/
 ### В работе использовались  модули:
 • babel-loader,
 • babel-cli,
