@@ -1,0 +1,12 @@
+.footer__social-item {
+  margin-right: 29px;
+  transition: opacity .2s linear;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+.footer__social-item:hover {
+  opacity: .7;
+}

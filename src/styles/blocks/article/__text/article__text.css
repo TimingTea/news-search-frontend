@@ -1,0 +1,15 @@
+.article__text {
+  margin: 0 0 auto 0;
+  font: normal 400 16px/22px Roboto, Arial, sans-serif;
+  color: #1a1b22;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .article__text {
+    -webkit-line-clamp: 4;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Timur Bolganbayev">
+  <meta name="description" content="News search site">
+  <title>Сохранённые статьи</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.articles.css %>">
+  <link rel="shortcut icon" type="fav-icon/png" href="<%=require('../../images/favicons/fav-icon.png').default%>">
+
+</head>
+<body>
+  <div class="page">
+
+    <header class="header">
+
+      <div class="header__container">
+        <a href="#" class="header__logo header__logo_black" lang="en" title="Главную страницу">NewsSearcher</a>
+        <button type="button" class="header__mobile_buton header__mobile_buton-close-black header__mobile_buton-open-black"></button>
+        <nav class="header__navigation">
+
+          <div class="popup popup__mobile popup__mobile-open"></div>
+
+            <ul class="header__menu header__menu_black">
+
+              <li class="header__menu_item header__menu_item-mobile">
+                <a href="./index.html" class="header__menu_item-link header__menu_item-link-acc-notactive"  title="Главная страница">Главная</a>
+              </li>
+
+              <!-- <li class="header__menu_item">
+                <a href="../../pages/" class="header__menu_item-link header__menu_item-link-acc-active"  title="Сохранённые статьи">Сохранённые статьи</a>
+              </li> -->
+
+              <!-- <li class="header__menu_item">
+                <button type="button" class="button header__button  header__button_black">Авторизоваться</button>
+            </li> -->
+
+            <li class="header__menu_item header__menu_item-mobile">
+              <button type="button" class="button header__button header__button_black header__button_black-logout">Пупусь</button>
+          </li>
+
+            </ul>
+        </nav>
+      </div>
+  </header>
+
+  <div class="main">
+    <section class="inform">
+      <div class="inform__container">
+        <h1 class="inform__title">Сохранённые статьи</h1>
+        <p class="inform__saved-articles">Пупусь, у вас 5 сохранённых статей</p>
+        <p class="inform__keywords">По ключевым словам:
+          <b>Природа</b>,
+          <b>Тайга</b> и
+          <b>2 другим</b>
+        </p>
+      </div>
+    </section>
+
+    <section class="articles articles__visible">
+      <div class="articles__list">
+
+        <div class="article">
+          <div class="article__container">
+            <p class="article__paragraph">Убрать из сохранённых</p>
+            <button type="button" class="article__button_bookmark  article__button_delete-art"></button>
+          </div>
+          <a href="#" class="article__link" target="_blank">
+            <img src="<%=require('../../images/nationalpark.png').default%>" alt="Фотография зеленых кустов" class="article__image">
+          <div class="article__description">
+            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
+            <h3 class="article__title">Национальное достояние – парки</h3>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">Лента.ру</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="article">
+          <div class="article__container">
+            <p class="article__paragraph">Убрать из сохранённых</p>
+            <button type="button" class="article__button_bookmark article__button_delete-art "></button>
+          </div>
+          <a href="#" class="article__link" target="_blank">
+            <img src="<%=require('../../images/forestflash.png').default%>" alt="Фотография зеленых кустов" class="article__image">
+          <div class="article__description">
+            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
+            <h3 class="article__title">Национальное достояние – парки</h3>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">Лента.ру</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="article">
+          <div class="article__container">
+            <p class="article__paragraph">Убрать из сохранённых</p>
+            <button type="button" class="article__button_bookmark article__button_delete-art "></button>
+          </div>
+          <a href="#" class="article__link" target="_blank">
+            <img src="<%=require('../../images/forestflash.png').default%>" alt="Фотография зеленых кустов" class="article__image">
+          <div class="article__description">
+            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
+            <h3 class="article__title">Национальное достояние – парки</h3>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">Лента.ру</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="article">
+          <div class="article__container">
+            <p class="article__paragraph">Убрать из сохранённых</p>
+            <button type="button" class="article__button_bookmark article__button_delete-art "></button>
+          </div>
+          <a href="#" class="article__link" target="_blank">
+            <img src="<%=require('../../images/forestflash.png').default%>" alt="Фотография зеленых кустов" class="article__image">
+          <div class="article__description">
+            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
+            <h3 class="article__title">Национальное достояние – парки</h3>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">Лента.ру</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="article">
+          <div class="article__container">
+            <p class="article__paragraph">Убрать из сохранённых</p>
+            <button type="button" class="article__button_bookmark article__button_delete-art"></button>
+          </div>
+          <a href="#" class="article__link" target="_blank">
+            <img src="<%=require('../../images/taiga.png').default%>" alt="Фотография зеленых кустов" class="article__image">
+          <div class="article__description">
+            <time class="article__date" datetime="2019-08-02">2 августа, 2019</time>
+            <h3 class="article__title">Национальное достояние – парки</h3>
+            <p class="article__text">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <p class="article__source">Лента.ру</p>
+          </div>
+        </a>
+        </div>
+
+      </div>
+      <!-- <button type="button" class="articles__show-more">Показать еще</button> -->
+    </section>
+
+   </div>
+   <footer class="footer">
+    <p class="footer__copyright">&copy; 2020 NewsSearcher Powered by News API</p>
+    <div class="footer__container">
+      <nav class="footer__navigation">
+        <ul class="footer__menu">
+          <li class="foooter__menu_item">
+            <a href="../index.html" class="footer__menu_item-link" title="Главная страница">Главная</a>
+          </li>
+          <li class="foooter__menu_item">
+            <a href="https://praktikum.yandex.ru/" target="_blank" class="footer__menu_item-link" title="Яндекс.Практикум">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__social">
+      <ul class="footer__social_items">
+        <li class="footer__social-item">
+          <a href="https://github.com/TimingTea" target="_blank" class="footer__social-link" title="Мой Github">
+          <img src="<%=require('../../images/gitgub-vk.svg').default%>" alt="Иконка Github" class="footer__social-icon" width="21" height="21">
+        </a>
+      </li>
+        <li class="footer__social-item">
+          <a href="https://www.facebook.com/bolganbayev" target="_blank" class="footer__social-link" title="Мой Facebook">
+            <img src="<%=require('../../images/fb.png').default%>" alt="Иконка Facebook" class="footer__social-icon"></a>
+
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+  </div>
+
+<script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
+</body>
+</html>
+

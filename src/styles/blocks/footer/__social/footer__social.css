@@ -1,0 +1,18 @@
+@import url('./_items/footer__social_items.css');
+
+
+.footer__social {
+  margin-left: 59px;
+}
+
+@media (max-width: 1100px) {
+  .footer__social {
+    margin-left: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__social {
+    margin-left: auto;
+  }
+}

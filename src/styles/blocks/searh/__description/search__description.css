@@ -1,0 +1,20 @@
+.search__description {
+  font: normal 400 18px Roboto, Arial, sans-serif;
+  color: white;
+  display: inline-block;
+  max-width: 545px;
+  margin: 0 0 66px 0;
+}
+
+@media (max-width: 1100px) {
+  .search__description {
+    max-width: 445px;
+    margin: 0 0 49px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .search__description {
+    margin: 0 0 124px 0;
+  }
+}

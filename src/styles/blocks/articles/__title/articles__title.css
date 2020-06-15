@@ -1,0 +1,31 @@
+.articles__title {
+  font: normal 400 40px Roboto-Slab, Arial, sans-serif;
+  line-height: 46px;
+  color: #1a1b22;
+  margin-top: 0;
+  margin-bottom: 64px;
+  width: calc(100% - 208px);
+  max-width: 1232px;
+  margin: 0 auto 64px;
+}
+
+@media (max-width: 1100px) {
+  .articles__title {
+    font: normal 400 30px Roboto-Slab, Arial, sans-serif;
+    margin-bottom: 30px;
+    width: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 767px) {
+  .articles__title {
+    margin-bottom: 23px;
+    width: calc(100% - 32px);
+  }
+
+}
+
+
+
+
+

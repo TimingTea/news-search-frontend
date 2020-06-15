@@ -1,0 +1,16 @@
+.article__paragraph{
+  box-sizing: border-box;
+  font: normal 500 10px/12px Roboto, Arial, sans-serif;
+  color: black;
+  border-radius: 10px;
+  margin: 0 0 0 5px;
+  background-color: white;
+  display: none;
+  padding: 14px 10px;
+  z-index: 10;
+}
+
+.article__button_not-bookmark:hover +.article__paragraph {
+  display: block;
+
+}

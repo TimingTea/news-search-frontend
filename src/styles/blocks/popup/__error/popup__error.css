@@ -1,0 +1,17 @@
+.popup__error {
+  color: red;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 4px 0 12px 0;
+  height: 13px;
+  font: normal 400 12px/15px Inter, Arial, sans-serif;
+}
+
+.popup__error:nth-of-type(3n) {
+  margin: 4px 0 0 0;
+}
+
+.popup__error.error-registration {
+  text-align: center;
+  margin: 0;
+}

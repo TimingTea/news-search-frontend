@@ -1,0 +1,20 @@
+.success__link {
+  color: #2f71e5;
+  text-decoration: none;
+  font: normal 400 18px/22px Inter, Arial, sans-serif;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  transition: all .2s linear;
+}
+
+.success__link:hover {
+  opacity: .5;
+}
+
+.success__link:focus {
+  opacity: .5;
+}

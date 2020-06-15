@@ -1,0 +1,4 @@
+.article__button_delete-art::after {
+  content: url('../../../../../images/delete-icon.svg');
+  opacity: 0.7;
+}

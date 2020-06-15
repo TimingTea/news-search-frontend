@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .header__menu.header__menu_black{
+    background-color: #1a1b22;
+  }
+}

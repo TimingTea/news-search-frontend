@@ -1,0 +1,19 @@
+.popup__sub-button_link {
+  color: #2f71e5;
+  font: normal 900 14px/17px Inter, Arial, sans-serif;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  transition: all .2s linear;
+}
+
+.popup__sub-button_link:hover {
+  opacity: .5;
+}
+
+.popup__sub-button_link:focus {
+  opacity: .5;
+}

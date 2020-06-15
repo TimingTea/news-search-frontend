@@ -1,0 +1,8 @@
+@import url('./social-item/footer__social-icon.css');
+@import url('./social-item/footer__social-item.css');
+.footer__social_items {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}

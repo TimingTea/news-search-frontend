@@ -1,0 +1,9 @@
+@import url('./__link/success__link.css');
+@import url('./__title/success__title.css');
+@import url('./__content/success__content.css');
+@import url('./__close/success__close.css');
+
+.success {
+  padding-top: 700px;
+  z-index: 1;
+}

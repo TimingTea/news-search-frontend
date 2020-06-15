@@ -1,0 +1,13 @@
+.footer__copyright {
+  margin: 0 auto 0 0;
+  font: normal 400 16px/22px Roboto, Arial, sans-serif;
+  color: #b6bcbf;
+  border: none;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .footer__copyright {
+    order: 3;
+  }
+}
