@@ -1,0 +1,9 @@
+.header__menu_item-link-acc-notactive {
+  border-bottom: none;
+  color: #1a1b22;
+  transition: color .2s linear;
+}
+
+.header__menu_item-link-acc-notactive:hover {
+  color: #b6bcbf;
+}

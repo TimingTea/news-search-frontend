@@ -1,0 +1,18 @@
+@import url('./_about/author__wraper_about.css');
+@import url('./_title/author__wraper_title.css');
+.author__wraper {
+  width: 600px;
+  padding-top: 51px;
+}
+
+@media (max-width: 1279px) {
+  .author__wraper {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .author__wraper {
+    width: 100%;
+  }
+}

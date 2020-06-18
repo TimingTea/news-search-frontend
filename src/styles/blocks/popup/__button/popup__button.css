@@ -1,0 +1,29 @@
+.popup__button {
+  font: normal 500 18px/24px Roboto, Arial, sans-serif;
+  width: 100%;
+  height: 63px;
+  margin-top: 10px;
+  border: 0;
+  background-color: #2f71e5;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+.popup__button:hover {
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
+  background-color: #347eff;
+}
+
+.popup__button:active {
+  background-color: #2a65cc;
+}
+
+.popup__button:focus {
+  box-shadow: 0 0 15px rgba(47, 113, 229, 0.7);
+}
+
+.popup__button:disabled {
+  background-color: #e6e8eb;
+  color: #b6bcbf;
+  box-shadow: none;
+}

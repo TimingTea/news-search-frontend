@@ -1,0 +1,13 @@
+.inform__saved-articles {
+  font: normal 400 40px/46px Roboto-Slab, Arial, sans-serif;
+  max-width: 530px;
+  margin: 29px 0;
+}
+
+@media (max-width: 1100px) {
+  .inform__saved-articles {
+    font: normal 400 30px/34px Roboto-Slab, Arial, sans-serif;
+    max-width: 415px;
+    margin: 16px 0;
+  }
+}

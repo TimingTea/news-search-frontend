@@ -1,0 +1,13 @@
+.article__container {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  align-items: flex-end;
+  margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6%;
+  box-sizing: border-box;
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.header__menu_item-link-acc-active {
+  border-bottom: 3px solid #1a1b22;
+  color: #1a1b22;
+}
+
+@media (max-width: 767px) {
+  .header__menu_item-link-acc-active {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,4 @@
+.article__button_added-bookmark::after {
+  content: url('../../../../../images/bluebookmark.svg');
+  opacity: 1;
+}

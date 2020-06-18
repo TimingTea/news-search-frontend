@@ -1,0 +1,9 @@
+.header__button_white{
+  color: white;
+  border: 1px solid white;
+  /* font: normal 500 16px/24px Roboto, Arial, sans-serif; */
+}
+
+.header__button_white:hover {
+  border: 1px solid #d1d2d6;
+}

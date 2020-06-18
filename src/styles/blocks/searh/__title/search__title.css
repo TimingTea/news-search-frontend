@@ -1,0 +1,14 @@
+.search__title {
+  font: normal 400 60px Roboto-Slab, Arial, sans-serif;
+  color: white;
+  max-width: 608px;
+  margin: 0 0 32px 0;
+}
+
+@media (max-width: 1100px) {
+  .search__title {
+    font: normal 400 36px Roboto-Slab, Arial, sans-serif;
+    max-width: 394px;
+    margin: 0 0 16px 0;
+  }
+}

@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  .header__menu.header__menu_open {
+    visibility: visible;
+    right: 0;
+    display: block;
+    position: absolute;
+  }
+}
+

@@ -1,0 +1,4 @@
+.popup__mobile {
+  z-index: 11;
+  display: none;
+}

@@ -1,0 +1,9 @@
+.article__button_not-bookmark::after {
+  content: url('../../../../../images/blackbookmark.svg');
+  opacity: .5;
+}
+
+.article__button_not-bookmark:hover +.article__paragraph {
+  display: block;
+}
+/* нужно както переделать, чтобы работало сначала дожен быть букмарк и под ним подсказка */

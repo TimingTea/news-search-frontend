@@ -1,0 +1,7 @@
+.button {
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s linear;
+}

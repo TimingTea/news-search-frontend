@@ -1,0 +1,23 @@
+@import url('./_not-bookmark/article__button_not-bookmark.css');
+@import url('./_added-bookmark/article__button_added-bookmark.css');
+@import url('./_delete-art/article__button_delete-art.css');
+.article__button_bookmark {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: white;
+  padding: 13px;
+  margin: 0 0 5px 5px;
+  outline: none;
+}
+
+.article__button_bookmark::after {
+  position: relative;
+}
+
+.article__button_bookmark:hover::after {
+  opacity: 1;
+}
+

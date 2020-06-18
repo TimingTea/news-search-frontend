@@ -1,0 +1,15 @@
+.article__image {
+  object-fit: cover;
+  object-position: center center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.article__image::before {
+  content: '';
+  display: block;
+  padding-top: 63%;
+}

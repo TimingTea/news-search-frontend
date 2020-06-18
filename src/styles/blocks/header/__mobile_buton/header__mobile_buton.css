@@ -1,0 +1,22 @@
+@import url('./_buton-close/header__mobile_buton-close.css');
+@import url('./_buton-open/header__mobile_buton-open.css');
+@import url('./_buton-close-black/header__mobile_buton-close-black.css');
+@import url('./_buton-open-black/header__mobile_buton-open-black.css');
+
+.header__mobile_buton {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  outline: none;
+  z-index: 12;
+}
+
+@media (max-width: 767px) {
+  .header__mobile_buton {
+    display: inline;
+  }
+}

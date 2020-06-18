@@ -1,0 +1,3 @@
+.header__mobile_buton.header__mobile_buton-open::after {
+  content: url('../../../../../images/menu_white.svg');
+}

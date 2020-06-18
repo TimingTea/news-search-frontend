@@ -1,0 +1,10 @@
+.header__menu_item-link-main-active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .header__menu_item-link-main-active {
+    border-bottom: none;
+  }
+}

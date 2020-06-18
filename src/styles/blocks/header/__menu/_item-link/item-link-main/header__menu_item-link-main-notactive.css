@@ -1,0 +1,9 @@
+.header__menu_item-link-main-notactive {
+  border-bottom: none;
+  color: #b6bcbf;
+  transition: color .2s linear;
+}
+
+.header__menu_item-link-main-notactive:hover {
+  color: white;
+}

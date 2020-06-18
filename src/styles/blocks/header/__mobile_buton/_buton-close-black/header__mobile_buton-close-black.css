@@ -1,0 +1,4 @@
+.header__mobile_buton-close-black::after {
+  content: url('../../../../../images/menu-black.svg');
+
+}

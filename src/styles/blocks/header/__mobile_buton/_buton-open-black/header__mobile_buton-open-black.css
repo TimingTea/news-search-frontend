@@ -1,0 +1,3 @@
+.header__mobile_buton-open-open::after {
+  content: url('../../../../../images/close-black.svg');
+}

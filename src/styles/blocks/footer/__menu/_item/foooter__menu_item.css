@@ -1,0 +1,23 @@
+.foooter__menu_item {
+  margin-right: 35px;
+}
+
+.foooter__menu_item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1100px) {
+  .foooter__menu_item {
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .foooter__menu_item {
+    margin: 0 0 24px 0;
+  }
+
+  .foooter__menu_item:last-child {
+    margin: 0;
+  }
+}

@@ -1,0 +1,8 @@
+.article__source {
+  margin: 0;
+  font: normal 700 16px/20px Roboto-Slab, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  padding-top: 13px;
+  color: #b6bcbf;
+}
