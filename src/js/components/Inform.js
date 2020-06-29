@@ -39,7 +39,7 @@ export default class Inform extends BaseComponent {
     let resultString;
 
     if (keywordsArr.length <= 0) {
-      resultString = '<p class="inform__keywords">По ключевым словам: ничего не найдено :(</p>';
+      resultString = '<p class="inform__keywords">По ключевым словам: ничего не найдено</p>';
     } else if (keywordsArr.length === 1) {
       resultString = `<p class="inform__keywords">По ключевым словам:
         <strong class="inform__accent">${keywordsArr[0][0]}</strong></p>`;
