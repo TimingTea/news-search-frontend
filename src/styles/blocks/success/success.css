@@ -4,6 +4,6 @@
 @import url('./__close/success__close.css');
 
 .success {
-  padding-top: 700px;
-  z-index: 1;
+
+  z-index: 2222;
 }

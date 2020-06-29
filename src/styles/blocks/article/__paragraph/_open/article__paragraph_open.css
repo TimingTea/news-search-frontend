@@ -1,0 +1,9 @@
+.article__paragraph.article__paragraph_opened {
+  display: block;
+}
+
+/* @media (max-width: 1439px) {
+  .article__paragraph.article__paragraph_opened {
+    display: none;
+  }
+} */

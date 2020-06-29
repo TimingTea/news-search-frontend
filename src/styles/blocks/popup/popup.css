@@ -11,6 +11,7 @@
 @import url('./__page-auth/popup__page-auth.css');
 @import url('./__mobile/popup__mobile.css');
 @import url('./__mobile/popup__mobile-open.css');
+@import url('./__is-opened/popup_is-opened.css');
 .popup {
   position: fixed;
   top: 0;
