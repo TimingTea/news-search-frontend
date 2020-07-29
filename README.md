@@ -1,29 +1,21 @@
-# news-search-frontend
-## Front-end приложения поисковика новостей
+# Дипломная работа Яндекс.Практикум Frontend
+## Это надежное и быстрое приложение по поиску новостей и сохранение понравившихся новостей к себе на личную страницу.
 ### ссылка на демо https://timingtea.github.io/news-search-frontend/
-### В работе использовались  модули:
-• babel-loader,
-• babel-cli,
-• babel-core,
-• babel-preset-env,
-• core-js,
-• babel-polyfill,
-• mini-css-extract-plugin,
-• optimize-css-assets-webpack-plugin,
-• css-loader,
-• html-webpack-plugin,
-• postcss-loader,
-• autoprefixer,
-• cssnano.
-— для работы вебпака:
-• gh-pages,
-• webpack-md5-hash,
-• webpack,
-• webpack-cli,
-• webpack-dev-server,
-• path.
-— для работы с изображениями:
-• file-loader, • image-webpack-loader.
+
+## Функционал:
+Можно:
+
+* создавать учетную запись
+* авторизироваться на сайте
+* искать интересующие новости по ключевым словам
+* сохранять понравившиеся статьи на личную страницу
+* удалять статьи с личной станицы
+
+### В работе использовались:
+*  HTML
+*  CSS
+*  БЭМ
+*  Webpack
 
 
 ## Установка:
@@ -33,4 +25,14 @@
 * Команда npm run dev запускает  локальный сервер с хот релоудом;
 * Команда npm run build - для сборки проекта в папке /dist 
 * Команда npm run deploy - для загрузки проекта на Github Pages
+
+## Работа 
+* Для локальной разработки с поднятием сервера используйте:
+
+* npm run dev
+* Для сборки версии в продакшен:
+* npm run build
+* Для деплоя на сервисе GitHub Pages используйте:
+* npm run deploy
+
 
