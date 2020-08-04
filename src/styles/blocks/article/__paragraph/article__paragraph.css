@@ -1,3 +1,5 @@
+@import url('./_open/article__paragraph_open.css');
+
 .article__paragraph{
   box-sizing: border-box;
   font: normal 500 10px/12px Roboto, Arial, sans-serif;
@@ -10,7 +12,3 @@
   z-index: 10;
 }
 
-.article__button_not-bookmark:hover +.article__paragraph {
-  display: block;
-
-}

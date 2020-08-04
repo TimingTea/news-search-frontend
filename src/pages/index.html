@@ -11,30 +11,30 @@
 </head>
 <body>
   <div class="page">
-    <header class="header">
+    <header class="header header_main">
       <div class="header__container">
-        <a href="#" class="header__logo header__logo_white" lang="en" title="Главную страницу">NewsSearcher</a>
+        <a href="#" class="header__logo header__logo_white" lang="en" title="Главная страница">NewsSearcher</a>
         <button type="button" class="header__mobile_buton header__mobile_buton-close header__mobile_buton-open"></button>
         <nav class="header__navigation">
 
-          <div class="popup popup__mobile popup__mobile-open"></div>
+          <div class="popup header__popup popup__mobile popup__mobile-open"></div>
 
-            <ul class="header__menu   header__menu_black">
+            <ul class="header__menu header__menu_black">
 
               <li class="header__menu_item header__menu_item-mobile">
                 <a href="./index.html" class="header__menu_item-link header__menu_item-link-main-active" lang="en" title="Главную страницу">Главная</a>
               </li>
 
-              <li class="header__menu_item header__menu_item-mobile">
-                <a href="./articles.html" class="header__menu_item-link header__menu_item-link-main-notactive" lang="en" title="Главную страницу">Сохранённые статьи</a>
+              <li class="header__menu_item  header__menu_item_articles">
+                <a href="./articles" class="header__menu_item-link header__menu_item-link-main-notactive" lang="en" title="Главную страницу">Сохранённые статьи</a>
               </li>
 
-              <li class="header__menu_item header__menu_item-mobile">
-                <button type="button" class="button header__button  header__button_white">Авторизоваться</button>
+              <li class="header__menu_item header__menu_item-mobile header__nav-item_auth">
+                <button type="button" class="button header__button  header__button_white header__button_auth">Авторизоваться</button>
             </li>
 
-            <li class="header__menu_item header__menu_item-mobile">
-              <button type="button" class="button header__button header__button_white header__button_white-logout">Пупусь</button>
+            <li class="header__menu_item header__menu_item-login ">
+              <button type="button" class="button header__button header__button_white header__button_white-logout"></button>
           </li>
 
             </ul>
@@ -47,11 +47,11 @@
       <div class="search__page_content">
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__description">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-        <form class="search__form" name="news-searcher">
-          <input type="text" name="search_input" class="search__input" placeholder="Введите тему новости" maxlength="20" required>
-          <button class="button  search__button" type="submit" disabled>Искать</button>
-          <span class="search__error"></span>
+        <form class="search__form form" name="news-searcher">
+          <input type="text" name="searchinput" class="search__input" id="search-input" placeholder="Введите тему новости" maxlength="20" required>
+          <button class="button   search__button" type="submit" disabled>Искать</button>
         </form>
+        <span class="search__error" id="searchinput"></span>
       </div>
     </section>
 
@@ -68,7 +68,14 @@
       </p>
     </section>
 
-    <section class="articles articles__visible">
+    <section class="request-error">
+      <h2 class="request-error__title">Упси! Похоже что-то пошло не так.</h2>
+      <p class="request-error__text">Проверьте предмет Вашего поиска или интеренет</p>
+    </section>
+
+
+
+    <section class="articles  articles_main">
       <h2 class="articles__title">Результаты поиска</h2>
       <div class="articles__list">
 
@@ -134,39 +141,41 @@
 
     <section class="author">
       <picture>
-        <source media="(max-width: 768px)" srcset="<%=require('../images/author-m.png').default%>">
-        <source media="(max-width: 1279px)" srcset="<%=require('../images/author-s.png').default%>">
-        <img src="<%=require('../images/author-l.png').default%>" alt="Фотография автора" class="author__image" title="">
+        <source media="(max-width: 768px)" srcset="<%=require('../images/IMG_20180323_121056.png').default%>">
+        <source media="(max-width: 1279px)" srcset="<%=require('../images/IMG_20180323_121056.png').default%>">
+        <img src="<%=require('../images/IMG_20180323_121056.png').default%>" alt="Фотография автора" class="author__image" title="">
       </picture>
       <div class="author__wraper">
-        <h3 class="author__wraper_title">Об авторе</h3>
-        <p class="author__wraper_about">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-        <p class="author__wraper_about">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        <h3 class="author__wraper_title">Обо мне </h3>
+        <p class="author__wraper_about">Привет, меня зовут Тимур - я целеустремленный и инициативный разработчик.
+          Мне очень нравится IT и всё что с этим связано. Закончил Яндекс.Практикум  и ищу работу в которой смогу себя реализовать.
+          </p>
+        <p class="author__wraper_about">От себя предложу знания и опыт работы с JavaScript, NodeJS, NPM, HTML, CSS, MySQL, MongoDB, Mongoose, Git,  Webpack. Знаю и использую Nginx.</p>
       </div>
     </section>
 
     <section class="popup popup__page-reg">
       <div class="popup__page_content">
-        <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close">
-        <form class="popup__form" name="reg" id="reg">
+        <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close popup__close_reg">
+        <form class="form popup__form popup__form_reg " name="reg" id="reg">
           <fieldset class="popup__fieldset">
             <h3 class="popup__title">Регистрация</h3>
 
             <label for="reg-email" class="popup__label">Email</label>
-            <input class="popup__input"  type="email" name="email" id="reg-email" pattern="^[^@]+@[^@.]+\.[^@]+$" placeholder="Введите e-mail" required >
-            <span class="popup__error error-email"></span>
+            <input class="popup__input popup__input_email"  type="email" name="emailreg" id="reg-email" pattern="^[^@]+@[^@.]+\.[^@]+$" placeholder="Введите e-mail" required >
+            <span class="popup__error error-email" id="emailreg"></span>
 
             <label for="reg-password" class="popup__label">Пароль</label>
-            <input class="popup__input"  type="password" name="password" id="reg-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="Введите пароль" required>
-            <span  class="popup__error error-password"></span>
+            <input class="popup__input popup__input_password"  type="password" name="passwordreg" id="reg-password" placeholder="Введите пароль" required>
+            <span  class="popup__error error-password" id="passwordreg"></span>
 
             <label for="reg-name" class="popup__label">Имя</label>
-            <input class="popup__input"  type="text" name="name" id="reg-name" pattern="^[А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?$" placeholder="Введите имя" minlength="2" maxlength="20" required>
-            <span  class="popup__error error-name"></span>
+            <input class="popup__input popup__input_name"  type="text" name="namereg" id="reg-name"  placeholder="Введите имя" minlength="2" maxlength="20" required>
+            <span  class="popup__error error-name" id="namereg"></span>
 
             <span class="popup__error error-registration"></span>
             <button type="submit" class="button popup__button">Зарегистрироваться</button>
-            <p class="popup__sub-button">или <button type="button" class="popup__sub-button_link">Войти</button></p>
+            <p class="popup__sub-button">или <button type="button" class="popup__sub-button_link popup__sub-button-link_auth">Войти</button></p>
           </fieldset>
         </form>
       </div>
@@ -174,21 +183,23 @@
 
     <section class="popup popup__page-auth">
       <div class="popup__page_content">
-        <img src="<%=require('../images/close.png').default%>" alt="" class="popup__close">
-        <form class="popup__form" name="auth" id="auth">
+        <img src="<%=require('../images/close.png').default%>" alt="" class="popup__close popup__close_auth">
+        <form class="popup__form popup__form_auth form" name="auth" id="auth" novalidate>
+
           <fieldset class="popup__fieldset">
 
             <h3 class="popup__title">Вход</h3>
             <label for="auth-email" class="popup__label">Email</label>
-            <input class="popup__input"  type="email" name="email" id="auth-email" pattern="^[^@]+@[^@.]+\.[^@]+$" placeholder="Введите e-mail" required >
-            <span  class="popup__error error-email"></span>
+            <input class="popup__input popup__input_email"  type="email" name="mailauth" id="auth-email" pattern="^[^@]+@[^@.]+\.[^@]+$" placeholder="Введите e-mail" required >
+            <span  class="popup__error error-email" id="mailauth"></span>
 
             <label for="auth-password" class="popup__label">Пароль</label>
-            <input class="popup__input"  type="password" name="password" id="auth-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" placeholder="Введите пароль" required>
-            <span  class="popup__error error-password"></span>
+            <input class="popup__input popup__input_password"  type="password" name="passwordauth" id="auth-password"  placeholder="Введите пароль" required>
+            <span  class="popup__error error-password" id="passwordauth"></span>
 
+            <span  class="popup__error error-authorization"></span>
             <button name="registration" disabled class="button popup__button">Войти</button>
-            <p class="popup__sub-button">или <button type="button" class="popup__sub-button_link">Зарегистрироваться</button>
+            <p class="popup__sub-button">или <button type="button" class="popup__sub-button_link popup__sub-button-link_reg">Зарегистрироваться</button>
             </p>
             </fieldset>
         </form>
@@ -197,7 +208,7 @@
 
     <section class="popup success">
       <div class="success__content">
-        <img src="<%=require('../images/close.png').default%>" alt="" class="popup__close">
+        <img src="<%=require('../images/close.png').default%>" alt="" class="popup__close popup__close_success">
         <div class="success__conteiner">
           <h3 class="success__title">Пользователь успешно зарегистрирован!</h3>
           <button type="button" class="success__link">Выполнить вход</button>

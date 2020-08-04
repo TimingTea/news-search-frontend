@@ -1,0 +1,10 @@
+.search__error {
+  text-align: center;
+  color: white;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 4px 0 12px 0;
+  height: 13px;
+  font: normal 400 12px/15px Inter, Arial, sans-serif;
+}

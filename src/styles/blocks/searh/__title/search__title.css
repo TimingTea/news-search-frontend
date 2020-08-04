@@ -9,6 +9,6 @@
   .search__title {
     font: normal 400 36px Roboto-Slab, Arial, sans-serif;
     max-width: 394px;
-    margin: 0 0 16px 0;
+    margin: 0 auto 16px;
   }
 }

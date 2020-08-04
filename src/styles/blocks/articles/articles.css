@@ -4,7 +4,7 @@
 @import url('./__show-more/articles__show-more.css');
 
 .articles {
-  /* display: none; */
+  display: none;
   box-sizing: border-box;
   background-color: #f5f6f7;
   padding: 80px 0;
